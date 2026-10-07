@@ -7,13 +7,14 @@
 
 ## 👥 Integrantes del equipo
 
-| N.º | Integrante |
-| :--: | :-- |
-| 1 | Alejandro Jiménez Mancera |
-| 2 | Mateo Burbano Klinger |
-| 3 | Gonzalo Ruiz Lara |
-| 4 | Adriana Benitez Anaya |
-| 5 | Rafael Marquez |
+| N.º | Integrante | Rol |
+| :--: | :-- | :-- |
+| 1 | Alejandro Jiménez Mancera | Scrum Master |
+| 2 | Mateo Burbano Klinger | Por asignar |
+| 3 | Gonzalo Ruiz Lara | Por asignar |
+| 4 | Adriana Benitez Anaya | Por asignar |
+| 5 | Rafael Delgado Shepherd | Por asignar |
+| 6 | Eloy Subiza Lupiañez | Por asignar |
 
 ## 📋 Reparto de tareas
 
