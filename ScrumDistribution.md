@@ -15,7 +15,7 @@
 | 4 | Adriana Benitez Anaya | Developer |
 | 5 | Rafael Delgado Shepherd | Developer |
 | 6 | Eloy Subiza Lupiañez | Product Owner |
-| 7 | Aryan Sepias | Developer |
+| 7 | Aryan Sepasi | Developer |
 
 
 
