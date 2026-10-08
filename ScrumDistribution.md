@@ -23,11 +23,11 @@
 
 | Tarea | Responsable(s) | Estado |
 | :-- | :-- | :--: |
-| Creación del tablero de Trello | Por asignar (2 personas) | Adriana & Gonzalo | ✅ Asignada |
-| Creación de casos de uso UML | Por asignar (2 personas) | Rafael & Eloy | ✅ Asignada |
+| Creación del tablero de Trello | Adriana & Gonzalo | ✅ Asignada |
+| Creación de casos de uso UML | Rafael & Eloy | ✅ Asignada |
 | Documentación de requisitos funcionales y no funcionales | Alejandro Jiménez Mancera | ✅ Asignada |
-| Revisión de requisitos | Por asignar | Mateo | ✅ Asignada |
-| Documentación de sesiones y sprints | Por asignar | Aryan | ✅ Asignada |
+| Revisión de requisitos | Mateo | ✅ Asignada |
+| Documentación de sesiones y sprints | Aryan | ✅ Asignada |
 
 ---
 
