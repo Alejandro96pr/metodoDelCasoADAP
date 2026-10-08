@@ -1,5 +1,11 @@
 # Turbine · DOCUMENTO DE REQUISITOS
 
+
+Los requisitos de negocio y de usuario se concretan en los apartados siguientes. En resumen:
+
+- **Negocio:** centralizar la gestión de clientes, facturas y cobros; facilitar el seguimiento de los pagos pendientes y evitar duplicados.
+- **Usuario:** automatizar la facturación mensual y los recordatorios; permitir a los empleados gestionar sus clientes asignados; y ofrecer al administrador una visión global y la gestión de usuarios.
+
 ## Requisitos funcionales, agrupados por actor
 
 **Personal de Turbine (todos los perfiles)**
@@ -61,3 +67,10 @@
 - **Administrador:** hace lo mismo con todos los clientes, gestiona usuarios y asignaciones, y ve el panel global.
 - **Responsable de configuración:** administrador con permiso adicional para ajustes generales y consulta de actividad.
 - **Servicio de correo y proveedor de cobros simulado:** sistemas externos para enviar avisos y comprobar pagos.
+
+
+
+## ⚠️Resumen para el equipo⚠️
+
+Tras revisar los apuntes y la transcripción de la entrevista, hemos seleccionado los requisitos que consideramos prioritarios para esta entrega. Los requisitos funcionales están agrupados por actor para facilitar su consulta, y los no funcionales aparecen en un apartado propio. Esta organización difiere ligeramente de la plantilla, pero recoge sus categorías.
+
