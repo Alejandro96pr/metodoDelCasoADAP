@@ -1,9 +1,4 @@
-# Turbine · Resumen breve para el equipo
-
-
-## ¿Qué aplicación nos piden?
-
-Una **web interna**, independiente de Brain, para registrar clientes, emitir facturas y seguir cobros con poco trabajo manual. Debe funcionar bien en móvil y ordenador. Los clientes de Turbine reciben facturas y avisos, pero **no entran en la aplicación**. La aplicación **no cobra**: comprueba si se ha pagado. Para el proyecto se puede simular Stripe.
+# Turbine · DOCUMENTO DE REQUISITOS
 
 ## Requisitos funcionales, agrupados por actor
 
@@ -66,14 +61,3 @@ Una **web interna**, independiente de Brain, para registrar clientes, emitir fac
 - **Administrador:** hace lo mismo con todos los clientes, gestiona usuarios y asignaciones, y ve el panel global.
 - **Responsable de configuración:** administrador con permiso adicional para ajustes generales y consulta de actividad.
 - **Servicio de correo y proveedor de cobros simulado:** sistemas externos para enviar avisos y comprobar pagos.
-
-En el diagrama, agruparía los casos de uso en: **gestionar clientes, gestionar usuarios y asignaciones, emitir facturas, consultar facturas, enviar facturas, comprobar cobros, gestionar recordatorios, tramitar bajas, consultar panel y configurar el sistema**. El cliente de Turbine no necesita un actor con acceso a la web: recibe comunicaciones fuera de ella.
-
-## Cuatro aclaraciones que conviene recordar
-
-1. **Brain queda fuera del proyecto.** Esta es una aplicación administrativa separada.
-2. **«Lector o Empleado operativo» no significa solo lectura.** Puede modificar lo que tenga asignado.
-3. **Baja y deuda son cosas distintas.** Se dejan de generar facturas nuevas, pero se siguen las pendientes.
-4. **Stripe real, WhatsApp, importación CSV y API externa** pueden quedar como ampliaciones. Para la entrega, basta demostrar bien el flujo principal con un simulador de cobros.
-
-**Pendiente de confirmar:** calendario definitivo de recordatorios, reglas de precios y cómo corregir una factura ya emitida. La transcripción contiene respuestas contradictorias; este resumen sigue las aclaraciones finales del cliente.
