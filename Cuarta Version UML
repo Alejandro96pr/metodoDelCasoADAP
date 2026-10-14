@@ -41,6 +41,7 @@ User -- CU03
 User -- CU04
 User -- CU05
 User -- CU08
+User -- CU10
 User -- CU11
 User -- CU12
 
@@ -58,8 +59,7 @@ Super -- CU19
 
 CU01 ..> CU01_Val : <<include>>
 CU05 ..> CU07 : <<include>>
-CU03 ..> CU06 : <<extend>>
-CU03 ..> CU09 : <<extend>>
-CU03 ..> CU10 : <<include>>
+CU03 <.. CU06 : <<extend>>
+CU03 <.. CU09 : <<extend>>
 
 @enduml
