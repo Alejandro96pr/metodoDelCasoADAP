@@ -84,7 +84,6 @@ Especificación de Casos de Uso
 # CU09: Registrar y Aplicar Baja Efectiva (extiende a CU03)
 - **Objetivo:** Dar de baja a un cliente para no cobrarle más meses, pero manteniendo el control de lo que aún debe.
 - **Actores:** Usuario, Administrador, SuperAdmin.
-- **Precondiciones:** El cliente tiene una suscripción activa.
 - **Flujo principal:**
   1. El actor indica la solicitud de baja del cliente y su fecha.
   2. El sistema frena la creación de facturas nuevas a partir de ese día.
@@ -95,7 +94,6 @@ Especificación de Casos de Uso
 # CU10: Generar Suscripciones y Estados
 - **Objetivo:** Configurar la suscripción de un cliente y sus condiciones de pago.
 - **Actores:** Usuario, Administrador, SuperAdmin.
-- **Precondiciones:** La empresa cliente ya está registrada.
 - **Flujo principal:**
   1. El actor configura los datos de la suscripción (plan, tarifa, fecha de inicio) y el sistema calcula el cobro proporcional si empieza a mitad de mes.
   2. El sistema activa la suscripción para generar las facturas automáticamente el día uno de cada mes.
