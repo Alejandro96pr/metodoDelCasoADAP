@@ -40,6 +40,7 @@
 > **Nota:** Las tareas pendientes de asignación se completarán cuando el equipo acuerde el reparto definitivo.
 >
 > **Tablero Trello organización:** https://trello.com/b/T7WHjgxC/adap-grupo-gauss
+> 
 > **ENLACE PRESENTACIÓN:** https://canva.link/e4ee3v992hv2jn5
 > Cuando la presentación esté terminada, se añadirá en pdf
 
