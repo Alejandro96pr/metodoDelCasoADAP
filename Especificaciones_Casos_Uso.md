@@ -1,6 +1,6 @@
 Especificación de Casos de Uso
 
-# CU01: Iniciar Sesión (CU01 ..> CU01_Val : <include>)
+# CU01: Iniciar Sesión (CU01 ..> CU01_Val : include)
 - **Objetivo:** Autenticar al usuario interno comprobando que su correo es válido.
 - **Actores:** Usuario, Administrador, SuperAdmin .
 - **Precondiciones:** El actor no tiene sesión activa y su cuenta existe.
@@ -42,7 +42,7 @@ Especificación de Casos de Uso
 - **Postcondiciones:** Se muestra la información solicitada[cite: 6].
 ---
 
-# CU05: Preparar y Emitir facturas (CU05 ..> CU07 : <include>)
+# CU05: Preparar y Emitir facturas (CU05 ..> CU07 : include)
 - **Objetivo:** Crear facturas (puntuales o recurrentes), emitirlas con numeración única y enviarlas al cliente.
 - **Actores:** Usuario, Administrador, SuperAdmin.
 - **Flujo principal:**
