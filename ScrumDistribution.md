@@ -41,6 +41,6 @@
 >
 > **Tablero Trello organización:** https://trello.com/b/T7WHjgxC/adap-grupo-gauss
 > 
-> **ENLACE PRESENTACIÓN:** https://canva.link/e4ee3v992hv2jn5
+> **ENLACE PRESENTACIÓN:** https://canva.link/e4ee3v992hv2jn5 FALTA POR VER NOFUNCIONALES
 > Cuando la presentación esté terminada, se añadirá en pdf
 
