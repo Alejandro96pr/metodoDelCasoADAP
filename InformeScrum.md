@@ -64,8 +64,8 @@ Para considerar un artefacto terminado dentro del Sprint, debe satisfacer:
 | Documentación de requisitos funcionales y no funcionales | Alejandro Jiménez Mancera |  ✅ Asignada   |
 | Revisión de requisitos                                   | Mateo                     |  ✅ Asignada   |
 | Documentación de sesiones y sprints                      | Aryan                     |  ✅ Asignada   |
-| Especificación de casos de uso                           | ⌛️ Por asignar            | ⌛️ Por asignar |
-| Creación de la Presentación para exponer                 | ⌛️ Por asignar            | ⌛️ Por asignar |
+| Especificación de casos de uso                           | Gonzalo                   |  ✅ Asignada   |
+| Creación de la Presentación para exponer                 | Adriana                   |  ✅ Asignada   |
 
 ---
 
