@@ -37,11 +37,29 @@
 
 ---
 
+## ***SEGUNDA FASE***
+## 📋 Reparto de tareas
+
+| Tarea | Responsable(s) | Estado |
+| :-- | :-- | :--: |
+| Diagrama UML de clases | XXX | Por asignar⌛️ |
+| Diagrama Físico de datos de Entidad-Relación | XXX | Por asignar⌛️ |
+| Diagrama UML de Secuencia | XXX | Por asignar⌛️ |
+| Diagrama de Arquitectura y componentes | XXX | Por asignar⌛️ |
+| Revisión diagramas de clases y entidad-relación | XXX | Por asignar⌛️ |
+| Revisión diagramas de secuencia y arquitectura y componentes | XXX | Por asignar⌛️ |
+| Creación de presentación | XXX | Por asignar⌛️ |
+___
+
+
+
+
+
 > **Nota:** Las tareas pendientes de asignación se completarán cuando el equipo acuerde el reparto definitivo.
 >
 > **Tablero Trello organización:** https://trello.com/b/T7WHjgxC/adap-grupo-gauss
 >
-> **ENLACE PRESENTACIÓN:** https://canva.link/e4ee3v992hv2jn5 COMPLETADA
+> **ENLACE PRESENTACIÓN 1:** https://canva.link/e4ee3v992hv2jn5 COMPLETADA
 >
-> SE HA AÑADIDO LA PRESENTACIÓN EN PDF A UNA NUEVA CARPETA
+
 
