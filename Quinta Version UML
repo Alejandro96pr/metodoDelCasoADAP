@@ -1,0 +1,66 @@
+@startuml
+"Usuario" as User
+"Administrador" as Admin
+"SuperAdmin" as Super
+Admin --|> User
+Admin <|-- Super
+
+'Casos de Todos'
+usecase "Iniciar Sesión"as CU01
+usecase "Validar dominio" as CU01_Val
+usecase "Recuperar contraseña" as CU02
+
+'Casos de Usuario'
+usecase "Gestionar Empresas" as CU03
+usecase "Buscar Clientes y Facturas" as CU04
+usecase "Preparar y Emitir facturas" as CU05
+usecase "Revisión anual de tramo" as CU06
+usecase "Generar PDF de la factura" as CU07
+usecase "Conciliar y Corregir estado de cobros" as CU08
+usecase "Registrar y Aplicar Baja Efectiva" as CU09
+usecase "Generar Suscripciones y Estados" as CU10
+usecase "Consultar e Importar/Exportar Informes" as CU11
+usecase "Importar Clientes por CSV" as CU12
+
+
+'Casos de Administrador'
+usecase "Crear/Desactivar Usuario" as CU13
+usecase "Asignar Clientes a Usuario" as CU14
+usecase "Ver panel Global Financiero" as CU15
+usecase "Aprobar o Rechazar cambios Tarifa" as CU16
+usecase "Rectificar Facturas" as CU17
+
+
+'Casos de SuperAministrador'
+usecase "Configurar Ajustes Generales del Sistema" as CU18
+usecase "Consultar y Filtrar Historial" as CU19
+
+User -- CU01
+User-- CU02
+User -- CU03
+User -- CU04
+User -- CU05
+User -- CU08
+User -- CU10
+User -- CU11
+User -- CU12
+
+
+
+Admin -- CU13
+Admin --CU14
+Admin -- CU15
+Admin -- CU16
+Admin -- CU17
+
+
+Super -- CU18
+Super -- CU19
+
+CU01 ..> CU01_Val : <<include>>
+CU05 ..> CU07 : <<include>>
+CU03 <.. CU06 : <<extend>>
+CU03 <.. CU09 : <<extend>>
+CU06 <.. CU16 : <<extends>>
+
+@enduml

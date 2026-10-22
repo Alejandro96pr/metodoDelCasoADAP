@@ -86,4 +86,5 @@ Si aún tienes cambios sin guardar al cambiar de rama, haz primero un commit en 
 
 - [Distribución de tareas Scrum](ScrumDistribution.md)
 - [Resumen del caso Turbine](Turbine_resumen_para_el_equipo.md)
+- [Revisión de requisitos](Revision_requisitos.md)
 
