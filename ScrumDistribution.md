@@ -42,12 +42,12 @@
 
 | Tarea | Responsable(s) | Estado |
 | :-- | :-- | :--: |
-| Diagrama UML de clases | Alejandro | Por asignar⌛️ |
-| Diagrama Físico de datos de Entidad-Relación | Eloy & Gonzalo | Por asignar⌛️ |
-| Diagrama UML de Secuencia | Rafael | Por asignar⌛️ |
-| Diagrama de Arquitectura y componentes | Adriana | Por asignar⌛️ |
+| Diagrama UML de clases | Alejandro | Asignada⌛️ |
+| Diagrama Físico de datos de Entidad-Relación | Eloy & Gonzalo | Asignada⌛️ |
+| Diagrama UML de Secuencia | Rafael | Asignada⌛️ |
+| Diagrama de Arquitectura y componentes | Adriana & Aryan | Asignada⌛️ |
 | Revisión diagramas de clases y entidad-relación | XXX | Por asignar⌛️ |
-| Revisión diagramas de secuencia y arquitectura y componentes | XXX | Por asignar⌛️ |
+| Revisión diagramas de secuencia y arquitectura y componentes | Adriana & Aryan | Asignada⌛️ |
 | Creación de presentación | XXX | Por asignar⌛️ |
 ___
 
