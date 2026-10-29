@@ -1,0 +1,28 @@
+@startuml
+package "Paquete de gestión de clientes" {
+  [Interfaz web] as web
+  [Autenticación] as auth
+  [Usuario] as user
+  [Módulo de gestión de clientes] as clientes
+}
+
+package "Paquete de Facturación" {
+  [Facturación] as fact
+  [Notificaciones] as notif
+}
+
+package "Persistencia" {
+  [Base de datos] as database
+}
+
+web -(0- auth : IAuth
+web -(0- user : IUser
+web -(0- clientes : IClientes
+
+clientes -(0- fact : IFacturación
+clientes -(0- notif : Inotificaciones
+clientes -(0- database : IDatabase
+
+fact -(0- database : IDatabase
+notif -(0- database : IDatabase
+@enduml
