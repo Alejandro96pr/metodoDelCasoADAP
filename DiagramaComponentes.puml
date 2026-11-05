@@ -1,14 +1,25 @@
 @startuml
-package "Paquete de gestión de clientes" {
+skinparam componentStyle uml2
+skinparam shadowing false
+
+package "Gestión de clientes" {
   [Interfaz web] as web
   [Autenticación] as auth
   [Usuario] as user
   [Módulo de gestión de clientes] as clientes
+  [Módulo de Auditoría] as audit
 }
 
-package "Paquete de Facturación" {
+package "Facturación" {
   [Facturación] as fact
+  [Planificador] as planif
+  [Generador de PDF] as pdf
+}
+
+package "Notificaciones e Integración" {
   [Notificaciones] as notif
+  [Servicio de Correo] as mail
+  [Simulador de Pagos (Stripe)] as stripe
 }
 
 package "Persistencia" {
@@ -18,11 +29,19 @@ package "Persistencia" {
 web -(0- auth : IAuth
 web -(0- user : IUser
 web -(0- clientes : IClientes
+web -(0- audit : IAuditoria
 
 clientes -(0- fact : IFacturación
-clientes -(0- notif : Inotificaciones
+clientes -(0- notif : INotificaciones
 clientes -(0- database : IDatabase
 
 fact -(0- database : IDatabase
+fact -(0- pdf : IPDF
+fact -(0- stripe : IPagos
+planif -(0- fact : IProgramador
+
+notif -(0- mail : IMailService
 notif -(0- database : IDatabase
+
+audit -(0- database : IDatabase
 @enduml
