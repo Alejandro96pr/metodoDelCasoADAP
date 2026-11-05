@@ -1,0 +1,30 @@
+@startuml
+autonumber
+
+skinparam BoxPadding 10
+
+<style>
+participant{
+Padding 10
+}
+</style>
+
+
+actor "Usuario" as User
+actor "Administardor" as Admin
+actor "SuperAdministrador" as Super
+
+participant "Interfaz / UI" as UI
+participant "Controlador Sistema" as Ctrl
+participant "Usuario (Entidad)" as EntityUser
+participant "EmpresaCliente" as Cliente
+participant "AsignacionCliente" as Asig
+participant "Subscripcion" as Subs
+participant "RevisionAnual" as Rev
+participant "PropuestaTarifa" as Prop
+participant "VigenciaTarifa" as Vig
+participant "EventoAuditoria" as Audit
+database "Base de Datos" as DB
+
+
+@enduml
