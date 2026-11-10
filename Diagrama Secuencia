@@ -26,5 +26,70 @@ participant "VigenciaTarifa" as Vig
 participant "EventoAuditoria" as Audit
 database "Base de Datos" as DB
 
+== Autentificación y Control de Roles ==
+User -> UI: Inciciar Sesión
+Admin-> UI: Inciciar Sesión
+Super-> UI: Inciciar Sesión
+UI -> Ctrl: Autentificar
+Ctrl -> Ctrl: Validar dominio corporativo
+Ctrl -> DB: Buscar Usuario y verificar Rol/Estado
+DB --> Ctrl: Retorna Usuario
 
+alt Contraseña Incorrtecta (Regla: Bloqueo al tercer fallo)
+Ctrl -> EntityUser: registrarFallo()
+Ctrl -> DB: Actualizar intentos fallidos
+Ctrl --> UI: Error: Credenciales inválidas o cuenta bloqueada
+else Autenticación Exitosa
+Ctrl -> EntityUser: Resetear intentos fallidos
+Ctrl -> Audit: <<create>> EventoAuditoria(actor, "Login Exitoso")
+Ctrl -> DB: Guardar registro de uditoria
+Ctrl --> UI: Acceso concedido y permisos de Rol cargados
+end
+
+== Gestión de Cartera, Usuarios y Asignaciones ==
+User -> UI: Alta de Empresa / Cliente
+UI -> Ctrl: crearEmpresa()
+Ctrl -> Cliente: <<create>> EmpresaCliente(nif, razonSocial, estado)
+Ctrl -> DB: Guardar EmpresaCliente
+
+Admin -> UI: Crear/Desactivar Usuario y Asignar Cliente
+UI -> Ctrl: asignarClienteUsuario(adminId, clienteId)
+Ctrl -> Asig: Verificar titularidad vigente
+Note over Asig: Un titular vigente por Cliente.
+Ctrl -> Asig: <<create>> AsignacionCliente(tipo, vigencia)
+Ctrl -> Asig: reasignarConTareas()
+Ctrl -> DB: Guardar AsignacionCliente y Tareas asociadas
+DB --> Ctrl: OK
+
+== Suscripciones, Revisión Anual y Tarifas ==
+User -> UI: Generar Suscripciones y Estados
+UI -> Ctrl: crearSuscripcion()
+Ctrl -> Subs: <<create>> Suscripcion(fechaInicio, estado="Activa")
+Ctrl -> DB: Guardar Suscripcion
+
+User -> UI: Iniciar Revisión Anual de Tramo
+UI -> Ctrl: procesarRevisionAnual(importeAnual)
+Ctrl -> Rev: <<create>> RevisionAnual(importeAnual, fuente, fechaRevision)
+Rev -> Prop: <<create>> Propuestatarifa(importePresupuesto, fechaEfecto, estado="Pendiente")
+Ctrl -> DB: Guardar RevisionAnual y Propuestatarifa originada
+
+alt Evaluar y Aprobar/Rechazar Propuesta
+Admin -> UI: Evaluar propuesta de tarifa pendiente
+alt Aprobar Propuesta
+Admin -> UI: Aprobar propuesta
+UI -> Ctrl: aprobarPropuesta(propuestaId)
+Ctrl -> Prop: aprobar()
+Ctrl -> Vig: <<create>> VigenciaTarifa(vigencia, importeMensual, origen=propuesta)
+Note over Vig: Regla: Una propuesta aprobada crea nueva VigenciaTarifa en su fecha de efecto
+Subs -> Vig: Asocia nueva VigenciaTarifa activa
+Ctrl -> DB: Actualizar Propuesta y persistir VigenciaTarifa
+Ctrl -> UI: Tarifa actualizada correctamente
+else Rechazar Propuesta
+Admin -> UI: Rechazar propuesta con comentario
+UI -> Ctrl: rechazarPropuesta(propuestaId, comentario)
+Ctrl -> Prop: rechazar(comentario)
+Ctrl -> DB: Actualiza estado de PropuestaTarifa
+Ctrl --> UI: Propuesta rechazada
+end
+end
 @enduml
