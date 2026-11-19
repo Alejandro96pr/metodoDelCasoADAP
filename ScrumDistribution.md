@@ -46,7 +46,7 @@
 | Diagrama Físico de datos de Entidad-Relación | Eloy & Gonzalo | TERMINADA |
 | Diagrama UML de Secuencia | Rafael | PENDIENTE |
 | Diagrama de Arquitectura y componentes | Adriana & Aryan | TERMINADA |
-| Revisión diagramas de clases y entidad-relación | XXX | Por asignar |
+| Revisión diagramas de clases y entidad-relación | Mateo | Por asignar |
 | Revisión diagramas de secuencia y arquitectura y componentes | Adriana & Aryan | PENDIENTE |
 | Creación de presentación | Adriana | PENDIENTE |
 ___
