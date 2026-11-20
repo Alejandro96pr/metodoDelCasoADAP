@@ -60,6 +60,6 @@ ___
 > **Tablero Trello organización:** https://trello.com/b/T7WHjgxC/adap-grupo-gauss
 >
 > **ENLACE PRESENTACIÓN 1:** https://canva.link/e4ee3v992hv2jn5 COMPLETADA
->
+> **ENLACE PRESENTACIÓN 2:** https://canva.link/1s6xemd9lwv7vn1 COMPLETADA
 
 
