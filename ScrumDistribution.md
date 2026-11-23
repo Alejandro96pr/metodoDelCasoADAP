@@ -44,11 +44,11 @@
 | :-- | :-- | :--: |
 | Diagrama UML de clases | Alejandro | TERMINADA |
 | Diagrama Físico de datos de Entidad-Relación | Eloy & Gonzalo | TERMINADA |
-| Diagrama UML de Secuencia | Rafael | PENDIENTE |
+| Diagrama UML de Secuencia | Rafael | TERMINADA |
 | Diagrama de Arquitectura y componentes | Adriana & Aryan | TERMINADA |
-| Revisión diagramas de clases y entidad-relación | Mateo | PENDIENTE |
-| Revisión diagramas de secuencia y arquitectura y componentes | Adriana & Aryan | PENDIENTE |
-| Creación de presentación | Adriana | PENDIENTE |
+| Revisión diagramas de clases y entidad-relación | Mateo | TERMINADA |
+| Revisión diagramas de secuencia y arquitectura y componentes | Adriana & Aryan | TERMINADA |
+| Creación de presentación | Adriana | TERMINADA |
 ___
 
 
