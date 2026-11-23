@@ -49,6 +49,9 @@
 | Revisión diagramas de clases y entidad-relación | Mateo | TERMINADA |
 | Revisión diagramas de secuencia y arquitectura y componentes | Adriana & Aryan | TERMINADA |
 | Creación de presentación | Adriana | TERMINADA |
+| Informe Scrum | Alejandro | TERMINADA |
+
+
 ___
 
 
